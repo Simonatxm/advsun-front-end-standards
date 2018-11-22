@@ -41,7 +41,7 @@
             <a href="#26newletter">Newletter规范</a>
           </li>
           <li>
-            <a href="#271formacos">资源汇总</a>
+            <a href="#27">资源汇总</a>
           </li>
           <li>
             <a href="#29">参考数据</a>
@@ -59,7 +59,7 @@
             <textarea style="display:none;" id="outputPane" class="pane" readonly="readonly" rows="25" cols="100"></textarea>
             <div id="previewPane" class="pane markdown-body"><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
 <textarea style="display:none;" id="syntaxPane" class="pane" cols="80" rows="20" >
-## 1. 规范说明  
+## 1. 规范说明
 此为前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 
 此规范为参考规范，不全是硬性要求，部分硬性约定见下一条[书写规范](#2)，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
@@ -123,28 +123,28 @@ Eslint是一个代码规范和错误检查工具，在多人开发中经常使�
 
 ### 2.1 样式与内容分离
 
-#### 2.1.1 项目结构  
-    --- 
-     |---- index.html             入口页    
-     |---- js/                    JS //具体见JS细化结构                 
+#### 2.1.1 项目结构
+    ---
+     |---- index.html             入口页
+     |---- js/                    JS //具体见JS细化结构
      |---- css/                   CSS //具体见CSS细化结构
 
 #### 2.1.2 重构步骤约定
 1. `index.html` 全部样式附着于 `class="xxx"` **注：** _此时文件中不包含任何一个 id="xxx"_
-2. 为上一步书写 CSS style  
+2. 为上一步书写 CSS style
 **\[至此重构完成\]**
 3. 开始书写`js`交互文件，使用 `ID` 和 `Class` 定位被操作句柄
-4. 向 `index.html` 中需要的地方添加 `id="xxx"` 及 `data-xxx="xxx"`  
+4. 向 `index.html` 中需要的地方添加 `id="xxx"` 及 `data-xxx="xxx"`
 **\[至此交互效果完成\]**
 
-#### 2.1.3 命名规范  
+#### 2.1.3 命名规范
 * 文件及文件夹: 全部英文小写字母+数字或连接符"`-` , `_` "，不可出现其他字符
-如：`../css/style.css, jquery.1.x.x.js` 
+如：`../css/style.css, jquery.1.x.x.js`
 * 文件：调用 `/libs` 文件需包含版本号，压缩文件需包含`min`关键词，其他插件则可不包含
 如：`/libs/jquery.1.9.1.js` `/libs/modernizr-1.7.min.js` `fileuploader.js` `plugins.js`
-* ID: [匈牙利命名法] & [小駝峰式命名法]  
+* ID: [匈牙利命名法] & [小駝峰式命名法]
 如：`firstName` `topBoxList` `footerCopyright`
-* Class: [减号连接符]  
+* Class: [减号连接符]
 如：`top-item` `main-box` `box-list-item-1`
 * 尽量使用语义明确的单词命名，避免 `left` `bottom` 等方位性的词语
 
@@ -156,33 +156,33 @@ Eslint是一个代码规范和错误检查工具，在多人开发中经常使�
 
 ### 2.2 CSS 细化规范
 
-#### 2.2.1 CSS 文件结构 
+#### 2.2.1 CSS 文件结构
     --- ../css/
      |---- css/libs/reset.css                  CSS reset文件
-     |---- … … 
-     |---- css/images/                         主 CSS-sprite 图片     
+     |---- … …
+     |---- css/images/                         主 CSS-sprite 图片
      |---- css/style.css                       主 CSS 样式表
-     |---- … … 
+     |---- … …
      |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
      |---- css/xxx-style.css                   xxx 的 样式表
-     
-#### 2.2.2 CSS(含Less) 文件结构  
+
+#### 2.2.2 CSS(含Less) 文件结构
     --- ../css/
      |---- css/libs/reset.less            CSS reset文件
      |---- css/libs/elements.less         Less 函数复用文件
-     |---- … … 
-     |---- css/images/                         主 CSS-sprite 图片     
+     |---- … …
+     |---- css/images/                         主 CSS-sprite 图片
      |---- css/style.less                      主样式Less
      |---- css/style.css                       less -> css 自动生成
-     |---- … … 
+     |---- … …
      |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
      |---- css/xxx-style.less                  xxx 的 Less
      |---- css/xxx-style.css                   less -> css 自动生成
 
 #### 2.2.3 使用Less
-在 `.less`文件头部引入 [reset.less] & [elements.less]，之后调用如下属性传参即可，具体使用说明见 -> [Lesselements] 官方文档   
+在 `.less`文件头部引入 [reset.less] & [elements.less]，之后调用如下属性传参即可，具体使用说明见 -> [Lesselements] 官方文档
 
-    @import "libs/reset.less";  
+    @import "libs/reset.less";
     @import "libs/elements.less";
 
     .gradient
@@ -202,12 +202,12 @@ Eslint是一个代码规范和错误检查工具，在多人开发中经常使�
     .translate
 
 #### 2.2.4 CSS reset
-CSS reset 文件使用：[reset.css] 或 [reset.less]   
+CSS reset 文件使用：[reset.css] 或 [reset.less]
 
-* reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。  
+* reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。
 * 也可使用 `.clearfix` 清除浮动
 
-#### 2.2.5 CSS 注释格式约定  
+#### 2.2.5 CSS 注释格式约定
     /*
     @name: Drop Down Menu
     @description: Style of top bar drop down menu.
@@ -215,18 +215,18 @@ CSS reset 文件使用：[reset.css] 或 [reset.less]
     @author: Andy Huang(andyahung@geekpark.net)
     */
 
-_其中，@require为可选项_ 
+_其中，@require为可选项_
 
 * CSS换行制表：使用 2 <del>或4</del> 个空格，而非\[Tab\]
 * 书写格式：
-    * CSS名称+冒号+属性  
+    * CSS名称+冒号+属性
     如：`.box1 {float:left;}`
-    * 建议保留`{`左侧空格，字体名用`\`包含  
+    * 建议保留`{`左侧空格，字体名用`\`包含
     如：`.box1,.box2,.box3 {font-family:Courier,'Courier New';}`
-    * 避免中文，或使用转义，推荐前者  
+    * 避免中文，或使用转义，推荐前者
     如：`font-family: "Microsoft YaHei";` `font-family:\5fae\8f6f\96c5\9ed1;`
-        
-#### 2.2.6 CSS各属性的排列顺序：不做硬性要求  
+
+#### 2.2.6 CSS各属性的排列顺序：不做硬性要求
 _如：以下2种顺序均可_
 
     .box {
@@ -245,8 +245,15 @@ _如：以下2种顺序均可_
       background: transparent none repeat scroll 0 0 ;
       position: relative;
     }
-  
-#### 2.2.7 CSS嵌套规则    
+
+#### 2.2.7 [CSS命名](http://www.divcss5.com/jiqiao/j4.shtml)
+* 统一使用小写英文加`-`，不允许使用大写字母或`_`
+* 避免`class`与`id`重名，`id`必须唯一
+* 如果遇到不常用的，可以借助翻译工具进行翻译取其英文命名
+* `id`和`class`的命名应反映该元素的功能或使用通用名称，而不要用抽象的晦涩的命名。反映元素的使用目的是首
+选
+
+#### 2.2.8 CSS嵌套规则
     /* 推荐嵌套层级 */
     .ui-icon-rarr{}
     .ui-icon-larr{}
@@ -261,7 +268,7 @@ _如：以下2种顺序均可_
     .ui-list{}
     .ui-nav{}
 
-#### 2.2.8 CSS格式化  
+#### 2.2.8 CSS格式化
 勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 **一行** 输出：
 
     .box{
@@ -272,16 +279,17 @@ _如：以下2种顺序均可_
       width: 22px;
       z-index: 33;
     }
-    
+
+
 ### 2.3 XHTML 细化规范
 
-#### 2.3.1 HTML 注释格式约定  
+#### 2.3.1 HTML 注释格式约定
     <!--
     @name: Drop Down Menu
     @description: Style of top bar drop down menu.
     @author: Andy Huang(andyahung@geekpark.net)
     -->
-    
+
     <div id="header">
         <div class="xxx">
             <span>HTML行内注释格式</span>
@@ -290,7 +298,7 @@ _如：以下2种顺序均可_
 
 * HTML换行缩进：**采用 2 空格**
 
-#### 2.3.2 HTML嵌套规则  
+#### 2.3.2 HTML嵌套规则
     /* 推荐嵌套层级 */
       <ul class="ui-nav">
         <li class="ui-nav-item"> some text
@@ -299,102 +307,57 @@ _如：以下2种顺序均可_
               <ul class="ui-list">
                 <li class="ui-list-item"> some text</li>
               </ul
-            ...
+                      ...
            </ul>
         </li>
         <li
-        ...
+                ...
       </ul>
 
-#### 2.3.4 \* 第一行统一使用HTML5标准：<!DOCTYPE html>
-    <!DOCTYPE html>
-    <html dir="ltr" lang="zh-CN">
-    <head>
-      <meta charset="utf-8" />
-      <title>极客公园 | 创新者社区</title>
-      <meta name="keywords" content="xxxx, xxx, xxxxx" />
-      <meta name="description" content="xxxxxxxxxxxxxxxxxxxx" />
-        
-
-#### 2.3.5 Meta 的使用：（需要根据具体需求按需选择）可参看：[cool-head]
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Cache-Control" content="max-age=7200" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.geekpark.net/" />
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <script type="text/javascript" src="/js/xxx.js"></script>
-    <link rel="stylesheet" href="/css/xxx.css">
-    
-    <script type="text/javascript">
-        //Google 统计代码 的位置在离</head>最近的位置
-    </script>
-  </head>
-
-* `<img>`标签默认缺省格式：`<img src="xxx.png" alt="缺省时文字" />` 避免出现[src="" 问题]
-* `<a>`标签缺省格式：`<a href="###" title="链接名称">xxx</>` 注：`target="_blank"` 根据需求决定  
+#### 2.3.4 标签的缺省样式
+    <img src="xxx.png" alt="缺省时文字" style="width:128px;height:128px">
+    <a href="###" title="链接名称">xxx</>
+* `<img>`标签默认使用缺省格式,避免出现[src="" 问题]
+* 图片通常使用 alt 属性。 在图片不能显示时，它能替代图片显示。
+* 定义好图片的尺寸，在加载时可以预留指定空间，减少闪烁。
+* `<a>`标签缺省格式：`<a href="###" title="链接名称">xxx</>` 注：`target="_blank"` 根据需求决定
 * `<a>`标签预留链接占位符使用`###`，参见：[a标签占位符问题]
+
+#### 2.3.5 空格、空行和缩进
+* **空格**：等号前后可以使用空格，推荐少用空格，缩进使用两个空格，不建议使用TAB
+* **空行**：不要无缘无故添加空行，为每个逻辑功能块添加空行，以便于阅读
+* 每行代码尽量少于80个字符，比较短的代码间不要使用不必要的空格和缩进
+
+#### 2.3.6 其他细节
 * 所有标签需要符合XHTML标准闭合
 * 一律统一标签结尾斜杠的书写形式：`<br />` `<hr />` 注意之间空格
 * 避免使用已过时标签，如：`<b>` `<u>` `<i>` 而用 `<strong>` `<em>`等代替
 * 使用`data-xxx`来添加自定义数据，如：`<input data-xxx="yyy"/>`
 * 避免使用`style="xxx:xxx;"`的内联样式表
 * 特殊符号使用参考[HTML 符号实体]
+* HTML 代码尽量过一遍[HTML5 验证]
+* HTML 占位图片使用 [temp.im] & [placehold.us] 图片服务
+
 
 ### 2.4 JS 细化规范
 
-#### 2.4.1 JS 文件结构
-    ---/js/
-    |---- /libs/plugin-1/       使用到的js插件1  
-    |---- /libs/plugin-2/       使用到的js插件2  
-    |---- /libs/plugin-3/       使用到的js插件3  
-    |---- script.js             单独书写的js  
-    |---- plugins.js            调用的plugins汇总  
-    |---- jquery-1.9.x.min.js   调用jq库文件  
+#### 2.4.1 JS命名规则
+* 变量和函数为小驼峰法标识, 即除第一个单词之外，其他单词首字母大写（ lowerCamelCase）
+* 全局变量为大写 (UPPERCASE )
+* 常量 (如 PI) 为大写 (UPPERCASE )
+* 变量名不要以 $ 作为开始标记，会与很多 JavaScript 库冲突。
 
-* JS 换行缩进：采用 4 空格
-* 结束行需添加分号`;`
-* jQuery变量要求首字符为 `$`, 私有变量:首字符为`_`; 尽量避免全局变量.
-* 避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：[reflows，repaints]
-* JS调试使用`console.log()`及`console.dir()`进行，避免使用弹出框，线上版需要注释所有调试代码
-* JS压缩混淆工具: [JS Compressor]  如果使用了压缩，需要留 `name-src.js`在同路径供今后修改使用
+#### 2.4.2 空格和缩进
+    var x = y + z;
+    var values = ["Volvo", "Saab", "Fiat"];
+* 通常运算符 ( = + - * / ) 前后需要添加空格:
+* 使用 4 个空格符号来缩进代码块，不推荐使用TAB键
 
-##### 2.4.2 jQuery Call
-    <!-- Grab Google CDN jQuery. fall back to local if necessary -->  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
-    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>            
-##### 2.4.3 jQuery Plugin
+#### 2.4.3 JS文件
+* 大多 Web 服务器 (Apache, Unix) 对大小写敏感： london.jpg 不能通过 London.jpg 访问。
+* 其他 Web 服务器 (Microsoft, IIS) 对大小写不敏感： london.jpg 可以通过 London.jpg 或 london.jpg 访问。
+* 建议统一使用小写的文件名。
 
-* IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
-* <del>IE6 PNG 图片支持：[DD_belatedPNG]</del>
-* 定制&统一 浏览器的滚动条样式：[jquery-scroll] & [Lionbars]
-* hover提示效果文字：[bootstrap-tooltips] & [tipsy]
-* 滚动条跟随nav效果：[bootstrap-scrollspy]
-* 提示冒泡文字：[grumble.js]
-* 导航栏过渡效果：[lavalamp]
-* 移动设备的滚动效果：[iscroll 4]
-* Mac OS Lion 风格的滚动条：[Lionbars]
-* 弹性SlideShow：[kwicks for jQuery]
-* 瀑布流：[isotope]
-* 抖动效果：[jQ shake]
-* LightBox：[fancyBox]
-* KenDo UI：[KenDo UI]
-* textarea自适应高度：[elastic]
-* 提示区域 & 提示层：[noty]
-* 浮动话题泡：[jQuery grumble]
-* 旋转进度：[jQuery Knob]
-
-##### 2.4.4 JSON格式规范  
-参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
-
-### HTML 细化规范
-* HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
-* `css` 文件置于都 **头部**
-* `jQuery` 及 `Google Analytics`引用置于 **头部**
-* 其他效果`js`及`统计代码` 文件置于 **尾部**
-* HTML 代码尽量过一遍[HTML5 验证]
-* HTML 占位图片使用 [temp.im] & [placehold.us] 图片服务
 
 ### 2.5 Responsive Web 规范
 从设计之处就坚持"[Mobile First]"的理念，在重构页面的时候要灵活采取响应式的解决方案。
@@ -411,7 +374,7 @@ _如：以下2种顺序均可_
     <!--[if (lt IE 9)&(!IEMobile)]>
     <link rel="stylesheet" type="text/css" href="enhanced.css" />
     <![endif]-->
-    
+
 \* 使用 [CSS Media Queries] 方法
 
     @media screen and (max-width: 40.5em) {
@@ -422,7 +385,7 @@ _如：以下2种顺序均可_
     }
     @media screen and (max-width: 480px) {
     }
-    
+
 \* JS控制导航栏在 [resize 事件] 触发后的可见性，如：
 
     $(w).resize(function(){ //Update dimensions on resize
@@ -435,13 +398,13 @@ _如：以下2种顺序均可_
       mobile = (sw > breakpoint) ? false : true;
       if (!mobile) { //If Not Mobile
         $('[role="tabpanel"],#nav,#search').show(); //Show full navigation and search
-      } else { //Hide 
+      } else { //Hide
         if(!$('#nav-anchors a').hasClass('active')) {
           $('#nav,#search').hide(); //Hide full navigation and search
         }
       }
     }
-    
+
 #### 2.5.2 响应式解决方案
 \* 弹性图片
 
@@ -483,64 +446,27 @@ _如：以下2种顺序均可_
 * 不使用`Javascript`
 * 正式发送给用户之前，多次测试
 
-更多细节参考下面链接：  
-[12 Killer Tips and Tricks for Building HTML Email]  
+更多细节参考下面链接：
+[12 Killer Tips and Tricks for Building HTML Email]
 [Coding HTML Newsletters (EDM)]
 
 ### 2.7 生产力工具推荐
-#### 2.7.1 for Mac OS
-*for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
-##### 2.7.1.1 前端相关工具(Mac)
 
-* 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim] / [Intellij IDEA]
-* 命令行：[iTerm2]
-* 浏览器调试环境：[Chrome] / [Firefox] + [Firebug]
-* 移动设备调试环境：[Mozilla Fennec]
-* 兼容性测试：[VirtualBox] + Win XP（IE 8）
-* 版本控制工具：[GitHub for Mac] / [Versions] / [SourceTree]
-* FTP工具：[Filezilla] / [ForkLift]
-* HTTP抓包及Post/Get模拟：[Charles]
-* PHP集成环境：[XAMPP for Mac] / [MAMP]
-* SQL数据库管理：[Sequel Pro]
-* 标注工具：[Mark Man] / [xScope]
-* 取色拾色器： [Frank DeLoupe] / [Sip] / [Snip] / [xScope]
-* MarkDown编辑器：[Mou]
-* 浏览器免刷新开发环境：[LiveReLoad] / [CodeKit]
-* CSS Sprite切图工具：[SpriteRight]
-* Less -> CSS 编译：[CodeKit] / [LiveReLoad] / [Less]
-* 配色方案工具：[ColorSchemer Studio]
-* 多浏览器Cookie管理：[Cookie]
-* 图片素材收集：[Sparkbox] / [Pixa]
+#### 2.7.1 前端相关工具(Windows)
 
-##### 2.7.1.2 其他效率工具
+* 编辑器：JetBrains WebStorm
+* 命令行：cmd
+* 浏览器调试环境：Chrome / Firefox
+* 移动设备调试环境：Chrome toggle device toolbar
+* 版本控制：Sourcetree / Github for Windows
+* 浏览器同步测试：Browsersync
+* 原型设计：墨刀
+* 图像处理：Photoshop
 
-* 快速启动及切换app：[Alfred]
-* 剪切板历史记录：[Alfred]*(Fretures -> Clipboard)*
-* 笔记：[Evernote]
-* 轻量级GTD：[Clear]
-* 压缩解压：[The Unarchiver] / [Keka] / [iPack]
-* 语言文档和快捷词扩展：[Dash]
-* 时间中断提醒：[BreakTime]
+#### 2.7.2 其他效率工具(Windows)
 
-##### 2.7.2.1 前端相关工具(Windows)
-
-* 编辑器：[Sublime Text 2] / [Vim] / [Intellij IDEA]
-* 命令行：[Putty]
-* 浏览器调试环境：[Chrome] / [Firefox]
-* 移动设备调试环境：[Chrome Remote USB Debugging]
-* 版本控制：[Subversion] / [Github for Windows]
-* FTP工具：[Filezilla]
-* 抓包工具：[Fiddler2]
-* MarkDown：[MarkdownPad]
-* 浏览器免刷新开发环境：[LiveReLoad] / [F5]
-* Less -> CSS编译：[less.org]*(nodejs环境下编译)*
-* Haml -> Html编译：[haml.info]*(Gem下编译)*
-* 响应式设计查看工具：[Firefox Responsive Design View]
-
-##### 2.7.2.2 其他效率工具(Windows)
-
-* 笔记：[Evernote]
-* 压缩解压：[7z]
+* 笔记：石墨
+* 压缩解压：7z
 
 #### 2.7.3 其他收集
 * Firefox 扩展收藏集 -> [Firefox Add-ons collections]
@@ -550,14 +476,14 @@ _如：以下2种顺序均可_
 ### 2.8 相关技巧
 [Wiki page index]
 
-* [各浏览器的缓存清除方法]  
-* [测试技巧Gmail 添加词缀 .+ 获得多个邮件的方法]  
-* [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]  
+* [各浏览器的缓存清除方法]
+* [测试技巧Gmail 添加词缀 .+ 获得多个邮件的方法]
+* [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]
 * [技术团队"路由代理"解决方案和使用须知]
 
 ### 2.9 参考数据
-涉及到 `设计`->`重构`->`兼容性`->`测试` 时可参考各浏览器的占用情况  
-*-- updated: `2013/02 - 2013/04`*  via `Google Analytics of GeekPark`  
+涉及到 `设计`->`重构`->`兼容性`->`测试` 时可参考各浏览器的占用情况
+*-- updated: `2013/02 - 2013/04`*  via `Google Analytics of GeekPark`
 
 
 <table>
@@ -613,7 +539,7 @@ _如：以下2种顺序均可_
 </tr>
 </tbody></table>
 </td>
-<td align="right">  
+<td align="right">
 
 <table>
 <tbody><tr>
@@ -716,7 +642,7 @@ _如：以下2种顺序均可_
 [小駝峰式命名法]:http://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB "小駝峰式命名法"
 [CSS Compressor]: http://www.csscompressor.com/ "CSS 压缩"
 [JS Compressor]: http://javascriptcompressor.com/ "JS 压缩和混淆"
-[HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp 
+[HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp
 [Google JSON Style Guide]:http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml
 [JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
 [meta viewport]: https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag "<meta> ViewPort"

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1040393-22b9-47f3-90fb-4c7bfd4cc8cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/markdown/规范说明&amp;2.3XHTML细化规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/书写规范&amp;2.4JS细化规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/书写规范&amp;2.7生产工具推荐.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/规范说明&amp;2.3XHTML细化规范.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/书写规范&amp;2.3XHTML细化规范.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="343" lean-forward="true" selection-start-line="275" selection-end-line="343" />
+            <state relative-caret-position="566">
+              <caret line="396" column="45" lean-forward="true" selection-start-line="344" selection-end-line="396" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,11 +40,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="规范说明&amp;2.3XHTML细化规范.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/markdown/规范说明&amp;2.3XHTML细化规范.md">
+      <file leaf-file-name="书写规范&amp;2.3XHTML细化规范.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.3XHTML细化规范.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+            <state relative-caret-position="280">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="书写规范&amp;2.7生产工具推荐.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.7生产工具推荐.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="书写规范&amp;2.4JS细化规范.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.4JS细化规范.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -60,8 +80,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/markdown/规范说明&amp;2.3XHTML细化规范.md" />
+        <option value="$PROJECT_DIR$/markdown/书写规范2.7生产工具推荐.md" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/markdown/书写规范&amp;2.4JS细化规范.md" />
       </list>
     </option>
   </component>
@@ -75,8 +97,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="549" />
-    <option name="y" value="75" />
+    <option name="x" value="647" />
+    <option name="y" value="277" />
     <option name="width" value="1482" />
     <option name="height" value="941" />
   </component>
@@ -146,10 +168,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3426000" />
+    <option name="totallyTimeSpent" value="4585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="549" y="75" width="1482" height="941" extended-state="0" />
+    <frame x="262" y="167" width="1482" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24930748" />
@@ -232,16 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="343" lean-forward="true" selection-start-line="275" selection-end-line="343" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markdown/规范说明&amp;1结构说明.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -249,10 +261,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/规范说明&amp;2.3XHTML细化规范.md">
+    <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.7生产工具推荐.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="340">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.3XHTML细化规范.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="396" column="45" lean-forward="true" selection-start-line="344" selection-end-line="396" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/书写规范&amp;2.4JS细化规范.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
